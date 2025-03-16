@@ -1,9 +1,9 @@
-package app.scriptbucket.architecture.presentation.controllers;
+package scriptbucket.architecture.presentation.controllers;
 
 
-import app.scriptbucket.architecture.application.ScriptService;
-import app.scriptbucket.architecture.data.Script;
-import app.scriptbucket.architecture.presentation.DTOS.InboundScriptDTO;
+import scriptbucket.architecture.application.ScriptService;
+import scriptbucket.architecture.data.Script;
+import scriptbucket.architecture.presentation.DTOS.InboundScriptDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

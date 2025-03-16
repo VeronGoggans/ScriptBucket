@@ -1,4 +1,4 @@
-package app.scriptbucket.architecture.data;
+package scriptbucket.architecture.data;
 
 public enum ScriptStatus {
     RUNNING,

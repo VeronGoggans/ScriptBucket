@@ -1,4 +1,4 @@
-package app.scriptbucket.architecture.data;
+package scriptbucket.architecture.data;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

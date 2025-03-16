@@ -1,4 +1,4 @@
-package app.scriptbucket.architecture.data;
+package scriptbucket.architecture.data;
 import app.scriptbucket.architecture.application.ScriptType;
 import jakarta.persistence.*;
 

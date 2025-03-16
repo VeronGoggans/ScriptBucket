@@ -1,8 +1,8 @@
-package app.scriptbucket.architecture.application;
+package scriptbucket.architecture.application;
 
-import app.scriptbucket.architecture.data.Script;
-import app.scriptbucket.architecture.data.ScriptManager;
-import app.scriptbucket.architecture.data.ScriptRepository;
+import scriptbucket.architecture.data.Script;
+import scriptbucket.architecture.data.ScriptManager;
+import scriptbucket.architecture.data.ScriptRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 

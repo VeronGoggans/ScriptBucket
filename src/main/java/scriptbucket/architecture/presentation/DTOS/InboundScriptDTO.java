@@ -1,4 +1,4 @@
-package app.scriptbucket.architecture.presentation.DTOS;
+package scriptbucket.architecture.presentation.DTOS;
 
 import org.springframework.web.multipart.MultipartFile;
 

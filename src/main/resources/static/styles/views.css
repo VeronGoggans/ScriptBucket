@@ -1,3 +1,5 @@
+
+/*____________________________ UPLOAD VIEW ____________________________*/
 .upload-view {
     height: calc(100dvh - 100px);
     display: flex;
@@ -9,7 +11,7 @@
     margin-top: 50px;
     width: 450px;
     height: 350px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,3 +39,66 @@
     color: var(--blue);
     text-align: center;
 }
+
+
+/*____________________________ SCRIPT BUCKET VIEW ____________________________*/
+.script-bucket-view {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    height: calc(100dvh - 100px);
+}
+
+
+.search-container {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+
+.searchbar-component {
+    position: relative;
+    background-color: var(--secondary);
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.searchbar-component input {
+    width: 100%;
+    padding-left: 50px;
+    color: white;
+}
+
+.searchbar-component input::placeholder {
+    color: white;
+}
+
+.searchbar-component i {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    color: white;
+}
+
+.new-script-button {
+    background-color: var(--blue);
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.new-script-button:hover {
+    background-color: var(--dark-blue);
+}
+
+.new-script-button:active {
+    scale: 1.1;
+}
+
+
+
+
+/*____________________________ SCRIPT VIEW ____________________________*/

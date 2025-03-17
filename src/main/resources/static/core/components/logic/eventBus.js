@@ -2,7 +2,7 @@
  * A lightweight event bus for managing custom events and their listeners.
  * Provides a mechanism for decoupled communication between different components.
  */
-export class EventBus {
+class EventBus {
     /**
      * Initializes the EventBus with an empty collection of events.
      */
@@ -86,6 +86,8 @@ export class EventBus {
     }
 
 }
+
+export const eventBus = new EventBus();
 
 export const ScriptBucketEvents = {
 

@@ -1,10 +1,15 @@
 import { RouteID } from "../utils/constants.js";
-import {templates} from "../utils/templates.js";
+import { templates } from "../utils/templates.js";
+import { ScriptBucketController } from "./controller/ScriptBucketController.js";
+import { UploadController } from "./controller/uploadController.js";
 
 
-export class Router {
+
+class Router {
     constructor() {
-        this.viewElement = document.querySelector('.view')
+        this.viewElement = document.querySelector('.view');
+        this.scriptBucketController = new ScriptBucketController();
+        this.uploadController = new UploadController();
     }
 
     /**
@@ -18,14 +23,16 @@ export class Router {
 
         return new Promise((resolve) => {
             const observer = new MutationObserver(async (mutations, obs) => {
-                if (this.viewElement.children.length > 0) { // Ensures children exist
-                    obs.disconnect(); // Stop observing once the view is loaded
+                if (this.viewElement.children.length > 0) {
+                    obs.disconnect();
 
                     switch (routeId) {
                         case RouteID.SCRIPT_BUCKET_VIEW:
+                            await this.scriptBucketController.reboot()
                             break;
 
                         case RouteID.UPLOAD_VIEW:
+                            await this.uploadController.reboot();
                             break;
 
                         case RouteID.SCRIPT_VIEW:
@@ -42,3 +49,5 @@ export class Router {
         })
     }
 }
+
+export const router = new Router();
